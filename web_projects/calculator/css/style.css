@@ -1,0 +1,10 @@
+:root{ --bg:#0f172a; --panel:#0b1220; --btn:#1f2937; --accent:#f59e0b }
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial;margin:0;background:linear-gradient(180deg,#e6eef8,#fff);display:flex;align-items:center;justify-content:center;height:100vh}
+.calculator{width:320px;background:var(--panel);padding:16px;border-radius:12px;color:#fff;box-shadow:0 10px 30px rgba(2,6,23,.2)}
+.display{height:64px;background:#081226;border-radius:8px;padding:12px;font-size:2rem;text-align:right;display:flex;align-items:center;justify-content:flex-end}
+.keys{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}
+button{padding:14px;font-size:1.1rem;border-radius:8px;border:0;background:var(--btn);color:#fff;cursor:pointer}
+button[data-action="add"], button[data-action="subtract"], button[data-action="multiply"], button[data-action="divide"], button[data-action="calculate"]{background:var(--accent);color:#000;font-weight:600}
+.zero{grid-column:span 2}
+@media(max-width:420px){.calculator{width:92vw}}

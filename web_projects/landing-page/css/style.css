@@ -1,0 +1,16 @@
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial;margin:0;background:#fff;color:#0f172a}
+.container{max-width:1000px;margin:0 auto;padding:1.25rem}
+.lp-header{border-bottom:2px solid #e6eef8}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{color:#0b5ed7;margin:0}
+nav a{margin-left:1rem;text-decoration:none;color:#475569}
+.hero{padding:3rem 0;text-align:center}
+.hero h2{font-size:1.9rem;margin:0 0 .5rem}
+.cta{display:inline-block;padding:.6rem 1rem;background:#0b5ed7;color:#fff;border-radius:8px;text-decoration:none}
+.card{background:#f8fafc;padding:1rem;border-radius:8px;margin:1rem 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.pricing .tier{padding:1rem;border-radius:8px;background:#fff;border:1px solid #e6eef8;text-align:center}
+.popular{border:2px solid #0b5ed7;transform:translateY(-6px)}
+.site-footer{padding:1rem;text-align:center;color:#6b7280}
+@media(max-width:700px){.hero h2{font-size:1.4rem}}
